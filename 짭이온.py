@@ -343,5 +343,7 @@ async def 자판기(ctx):
     weights = [1, 3, 20, 20, 20, 20, 15, 25, 70]
     results = random.choices(minerals, weights=weights, k=1)
     await ctx.reply('윙~ 철커덩!  **' + ', '.join(results) + '** 이/가 나왔다!!')
+    
 
-bot.run('ODc2OTY5MDQ3MTcyOTg5MDI5.YRrzEg.hWy4bVthiVwyI5BfbIrsIlUUdx0')
+access_token = os.environ["BOT_TOKEN"]
+bot.run(access_token)
